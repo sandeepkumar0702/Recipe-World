@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Sharing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addrecipe.html">Add Recipe</a></li>
+                <li><a href="#view-recipes">View Recipes</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 style="text-align: center;">Welcome to Recipe Sharing</h2>
+        </section>
+
+        <section id="view-recipes">
+            <h2>View Recipes</h2>
+            <div class="filter">
+                <label for="filter-category">Filter by Category:</label>
+                <select id="filter-category">
+                    <option value="All">All</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Drinks">Drinks</option>
+                </select>
+            </div>
+            <div id="recipe-list" class="recipe-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Recipe Sharing App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
